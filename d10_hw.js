@@ -88,7 +88,7 @@ Write a function called dice; it should randomize an integer number between 1 an
 
 */
 console.log("\n----------EXERCISE 1----------\n")
-let ex1_randomize = Math.floor(Math.random()*7)+1;
+let ex1_randomize = Math.floor(Math.random()*6)+1;
 
 /* EXERCISE 2
 
@@ -794,7 +794,11 @@ function tree (number)
     let leafs = "";
     for (i = 0; i< number; i++)
     {
-        for (j = 0; j<=i; j=(2*j)-1)
+        for(j=0; j<number - i - 1; j++)
+        {
+            leafs += " ";
+        }
+        for (let k=0; k<2*i-1;k++)
         {
             leafs += "*";
         }
@@ -818,3 +822,9 @@ Commit and push the code to your personal GitHub repository; then post the link 
 */
 
 /* This movies array is used throughout the exercises. You’re not supposed to alter it. */
+console.log("\n----------FINAL BOSS---------\n");
+
+function isItPrime()
+{
+
+}
